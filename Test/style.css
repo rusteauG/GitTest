@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #f4f4f4, #333);
+
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #f2f2b2;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.intro {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.projects h2,
+.skills h2 {
+  margin-bottom: 1rem;
+}
+
+.project,
+.skill {
+  margin-bottom: 1rem;
+}
+.projects,
+.skills {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.skill img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.skill-details {
+  flex: 1;
+}
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .skill {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill img {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Projets.html */
+.projects-list {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects-list h2 {
+  margin-bottom: 1rem;
+}
+
+.projects-list .project {
+  margin-bottom: 1rem;
+}
+
+.projects-list .project h3 {
+  margin-bottom: 0.5rem;
+}
+
+.projects-list .project p {
+  margin-bottom: 0;
+}

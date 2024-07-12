@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BloG Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73ad21;
+        background-color: chocolate;
+      }
+      div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+      }
+      div.container {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      div.one {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      div.two {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        top: 0;
+        left: 100px;
+      }
+      div.three {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        top: 0;
+        left: 200px;
+      }
+      div.four {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+      }
+      div.five {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: #cae8ca;
+        border: 2px solid #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Blog Page</h2>
+    <a href="index.html">Back to HomePage</a>
+    <div>
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since. 'Whenever you feel like
+      criticizing anyone,' he told me, 'just remember that all the people in
+      this world haven't had the advantages that you've had.'
+    </div>
+    <h2>position: absolute;</h2>
+
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor (instead of positioned relative to the viewport, like
+      fixed):
+    </p>
+    <div class="sticky">I am sticky!</div>
+
+    <div style="padding-bottom: 20px">
+      <p>
+        In this example, the sticky element sticks to the top of the page (top:
+        0), when you reach its scroll position.
+      </p>
+      <p>Scroll back up to remove the stickyness.</p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+    </div>
+    <div class="relative">
+      This div element has position: relative;
+      <div class="absolute">This div element has position: absolute;</div>
+    </div>
+    <div class="fixed">This div element has position: fixed;</div>
+
+    <h2>TicTacToe GRID</h2>
+    <div class="container">
+      <div class="one">1</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="six"></div>
+    </div>
+
+    <div>
+      <img src="img/laura-jones.jpg" width="50" height="50" class="img-auth" />
+      <p class="auth">
+        Posted by<strong> Laura Jones</strong> on Monday, June 21st 2027
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "terminal.integrated.shell.windows": "C:\\Users\\Admin\\Downloads\\programs\\cmder\\vendor\\bin\\bash.exe",
+
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  }
+}
